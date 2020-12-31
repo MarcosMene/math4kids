@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+
+    <title>Math for Kids - Adiçãp</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Math 4 Kids</a> </h1>
+            <ul>
+                <li class="current"><a href="add.html">Adição</a></li>
+                <li><a href="subtract.html">Subtração</a> </li>
+                <li><a href="multiply.html">Multiplicação</a> </li>
+                <li><a href="divide.html">Divisão</a> </li>
+            </ul>
+
+        </div>
+      </header>
+
+
+
+
+
+        <div class="wrapper">
+            <div class="equation">
+                <h1 id="num1">1</h1>
+                <h1 id="action">+</h1>
+                <h1 id="num2">1</h1>
+                <h1 id="iqualsymbol">=</h1>
+                <h1 id="answer">?</h1>
+
+                <div class="ledswrapper">
+                    <div>
+                        <h3>Score</h3>
+                    </div>
+                    <div class="led-box">
+                      <div id="1" class="led-green">1</div>
+                    </div>  
+                    <div class="led-box">
+                        <div id="2"  class="led-green">2</div>
+                      </div> 
+                      <div class="led-box">
+                        <div id="3" class="led-green">3</div>
+                      </div> 
+
+                      <div class="led-box">
+                        <div id="4"  class="led-green">4</div>
+                      </div> 
+                      <div class="led-box">
+                        <div id="5"  class="led-green">5</div>
+                      </div> 
+                      <div class="led-box">
+                        <div id="6"  class="led-green">6</div>
+                      </div> 
+                      <div class="led-box">
+                        <div  id="7" class="led-green">7</div>
+                      </div> 
+                      <div class="led-box">
+                        <div id="8"  class="led-green">8</div>
+                      </div> 
+                      <div class="led-box">
+                        <div  id="9" class="led-green">9</div>
+                      </div> 
+                      <div class="led-box">
+                        <div  id="10" class="led-green">10</div>
+                      </div> 
+                  </div>
+            </div>
+
+           
+
+            <div class="answer-options">
+                <h1 id="option1">1</h1>
+                <h1 id="option2">2</h1>
+                <h1 id="option3">3</h1>
+            </div>
+          
+
+        </div>
+   
+
+   <section id="placar">
+      <div class="container2">
+      <h2 id="textplacar">Total de acertos:</h2>
+      <p id="result"></p>
+      <h2 id="again">Jogar novamente?</h2>
+      <button id="buttonYes" onclick="restart()">Sim</button>
+      <button id="buttonNon" onclick="stopjogo()">Não</button>
+      </div>
+     
+    </section>  
+
+    <audio id="myAudio" src="sound/wrong.mp3"></audio>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="script/add.js"></script>
+</body>
+</html>

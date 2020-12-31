@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+
+body {
+    font-family: 'Acme', sans-serif;
+    background-color: #e6e6ea;
+    font-size:1rem;
+    height: 100vh;
+        
+    
+}
+
+
+.container {
+    padding:20px;
+    overflow:hidden;
+    background-color: #fe4a49;
+    font-size: 2rem;
+}
+
+.container h1 {
+    float:left;
+    margin-left:10%;
+    color:white;
+    font-weight: bold;
+}
+
+.container ul{
+    list-style-type:none;
+    font-size: 20px;
+    margin-left: 60%;
+}
+
+.container li {
+    margin-top:20px;
+    float: left;
+    padding: 0 20px;
+    font-size: 2rem;
+      
+}
+
+.container a{
+    text-decoration:none;
+    color:white;
+}
+
+
+
+
+.container li:first-child:hover{
+    color:white; 
+    transform: rotate(8deg);
+}
+
+.container li:nth-child(2):hover{
+    color:white; 
+    transform: rotate(-8deg);
+}
+
+.container li:nth-child(3):hover{
+    color:white; 
+    transform: rotate(8deg);
+}
+
+.container li:nth-child(4):hover{
+    color:white; 
+    transform: rotate(-8deg);
+}
+
+.current a {
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: solid 4px white;
+    
+}
+
+#num1 {
+    color:#fe4a49;
+}
+
+#action {
+    color:#2ab7ca;
+}
+
+#num2 {
+    color:  #fed766;
+}
+
+#iqualsymbol {
+    color:#fe4a49;
+}
+
+#answer {
+    color:gray;
+}
+
+.ledswrapper{
+    margin-top:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.ledswrapper h3 {
+    font-size: 3rem;
+    color:#e00d0d;
+    padding-right:50px;
+}
+.led-box {
+    font-size: 1.8rem;
+    color:#66680a;
+    
+}
+
+  .led-green {
+    margin: 0 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #beb347;
+    border-radius: 50%;
+    box-shadow: rgba(119, 128, 68, 0.2) 0 -1px 7px 1px, inset #797a0c 0 -1px 9px, #97992d 0 2px 12px;
+    
+  }
+
+  .led-red {
+    margin: 0 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #F00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+  }
+  .led-green-light {
+    margin: 0 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ABFF00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+  }
+  
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+/* EQUATION  */
+.equation { 
+    font-size: 120px;
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding-top:10%;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.equation h1 {
+    display:inline;
+    padding:20px;
+    font-weight: bolder;
+}
+
+
+/* ANSWER OPTIONS  */
+
+.answer-options {
+     font-size: 90px;
+    margin-right:10px;
+}
+
+.answer-options h1 {
+    cursor:pointer;
+    color:whitesmoke;
+    border-radius: 3px;
+    margin-top:10px;
+    text-align: center;
+    width: 100%;
+    padding-bottom:20px;
+   
+}
+
+#option1 {
+    background-color: #fe4a49;
+    transition: 1s;
+}
+
+#option1:hover{
+    color:#fe4a49;
+    background-color: white;
+}
+
+#option2 {
+    background-color: #2ab7ca;
+    transition: 1s;
+}
+
+#option2:hover{
+    color:#2ab7ca;
+    background-color: white;
+}
+
+#option3 {
+    background-color: #fed766;
+    transition: 1s;
+}
+
+#option3:hover{
+    color:#fed766;
+    background-color: white;
+}
+
+#placar {
+    display:none;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+   top:30%;
+   left:50%;
+   transform: translate(-50%, -50%); 
+    z-index: 1;
+    
+}
+
+#placar button {
+    font-size: 2rem;
+    padding:10px 20px;
+    border-radius: 5px;
+    border:none;
+    margin:0 20px;
+    outline: none;
+    cursor: pointer;
+}
+#placar button:nth-child(4){
+    background-color:green;
+    color:white;
+}
+
+#placar button:nth-child(4):hover {
+    background-color: white;
+    color:#008000;
+}
+
+#placar button:nth-child(5) {
+    background-color:red;
+    color:white;
+}
+
+#placar button:nth-child(5):hover {
+    background-color:white;
+    color:red;
+}
+
+#placar .container2{
+    font-size: 3rem;
+    text-align:center;
+    background-color: #2AB7CA;
+    padding: 20px 10px; 
+    color:white;
+    padding-bottom:100px;
+    border-radius: 10px;
+}
+
+#placar .container2 h2 {
+   padding:50px 20px;
+     font-size:5rem;
+}
+#result{ 
+    font-size:6rem;
+    color:#89FF00;
+}
+
+/* PAINEL DE ENTRADA  */
+
+#painelEntrada {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    min-width: 400px;
+   top:30%;
+   left:50%;
+   transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+#painelEntrada .container2{
+    font-size: 4rem;
+    text-align:center;
+    background-color: #ecd341;
+    padding: 20px 10px; 
+    color:white;
+  
+    border-radius: 10px;
+}
+
+#painelEntrada button {
+    margin:50px;
+  font-size: 2rem;
+    padding:10px 20px;
+    border-radius: 5px;
+    border:none;
+    margin:40px 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+#painelEntrada h1:nth-child(1){
+  
+    color:green;
+}
+
+#painelEntrada h1:nth-child(2){
+  
+    color:chocolate;
+}
+
+#painelEntrada button:nth-child(4){
+    background-color:green;
+    color:white;
+}
+
+#painelEntrada button:nth-child(5){
+    background-color:orange;
+    color:white;
+}
+#painelEntrada h1:nth-child(1) {
+  transform: rotate(8deg);  
+}
+#painelEntrada h1:nth-child(2) {
+    transform: rotate(-8deg);  
+  }
+
+  #painelEntrada h1:nth-child(3) {
+    transform: rotate(8deg);  
+    padding-bottom:50px;
+  }
+
+  #painelEntrada .k {
+      color:orange;
+  }
+
+  #painelEntrada .i {
+    color:rgb(233, 64, 21);
+}
+
+#painelEntrada .d {
+    color:rgb(233, 21, 198);
+}
+
+#painelEntrada .s {
+    color:rgb(15, 241, 34);
+  
+}
+
+/* COMO JOGAR  */
+
+#regras {
+    display:none;
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    min-width: 400px;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%); 
+    z-index: 1;
+   
+}
+
+#regras .container2{
+ 
+    text-align:justify;
+    background-color: #fdc38d;
+    padding: 20px 60px; 
+    color:black;
+    border-radius: 10px;
+font-size: 1.8rem;
+}
+
+#regras h1 {
+    text-align:center;
+    color:rgb(235, 25, 10);
+    font-weight: normal;
+    padding-bottom:20px;
+    overflow:auto;
+    transform: rotate(5deg);
+    margin-top:20px;
+   
+}
+
+#regras p {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+#regras span {
+    position: absolute;
+    top:10px;
+    right: 30px;
+    font-size: 4rem;
+    color:#ff8800;
+    cursor: pointer;
+    outline: none;
+}
+
+#regras span:hover {
+    color:red;
+}
+
+
