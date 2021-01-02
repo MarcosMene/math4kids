@@ -12,15 +12,15 @@ let wrongAnswer = 0;
 
 function generate_equation(){
 do {
-  var num1 = Math.round(Math.floor(Math.random()*15+1));
-    var num2 = Math.round(Math.floor(Math.random()*10+1));
+  var num1 = Math.round(Math.floor(Math.random()*30+2));
+    var num2 = Math.round(Math.floor(Math.random()*10+2));
 
     if (num1 < num2) {
         num1 = num1 + num2;
     }
 
-    var dummyAnswer1 = Math.round(Math.floor(Math.random()*12)+1);
-    var dummyAnswer2 = Math.round(Math.floor(Math.random()*12)+1);
+    var dummyAnswer1 = Math.round(Math.floor(Math.random()*20)+1);
+    var dummyAnswer2 = Math.round(Math.floor(Math.random()*20)+1);
   
     
    
